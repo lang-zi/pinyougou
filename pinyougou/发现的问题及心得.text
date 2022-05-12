@@ -1,0 +1,54 @@
+1 左上角图标 可在网站后面反斜杠/favicon.ico
+
+2字体图标  可放大缩小   图片的劣势在于所占用空间大，放大容易失真  字体图标本质就是文字
+
+3 在PS里面视图菜单有个清除参考线，可以清除杂乱多余的线
+
+4 p47两分13秒  关于css精灵技术  我们以后再弄
+
+5 a:hover可以用得了   但是a :hover代码就会失效，区别在于后者多加了换一个空格 导致代码失效
+
+6 清除浮动P87 两分46秒
+
+7 让文字在一行显示 并且多余部分省略号请看P97 4分34秒
+
+8 谷歌浏览器F12控制台的边框在右侧，如何把它调到下面来，点击三个竖着的圆点，那里会有设置
+
+9 PS出现暂存盘已满怎么办？
+https://jingyan.baidu.com/article/414eccf6ad0f9c6b431f0afd.html 
+
+10 去掉input框的线（你点击的时候会出现的） outline:none
+
+![image-20220206175027521](C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20220206175027521.png)
+
+11 button去掉边框
+
+border:0
+
+
+
+
+
+12品优购首页focus制作
+
+这个录播图没有想象中这么简单，它的一个结构是ul>li>a>img
+
+![image-20220306120323185](C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20220306120323185.png)
+
+
+
+
+
+13如何画一个圆
+
+border-radius:50%
+
+
+
+
+
+14 定位的元素可以直接与父元素重合边框
+
+详细请看
+
+![image-20220310221104715](C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20220310221104715.png)

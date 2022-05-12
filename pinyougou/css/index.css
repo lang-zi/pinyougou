@@ -1,0 +1,258 @@
+/*这个文件放的是首页的样式*/
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 219px;
+    margin-top: 10px;
+}
+.focus {
+    position: relative;
+    width: 720px;
+    height: 455px;
+    background-color: blue;
+}
+.newsflash {
+    width: 250px;
+    height: 455px;
+}
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0,0,0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+}
+/*让右边的箭头老老实实从左边跑到右边去*/
+.arrow-r {
+    right: 0;
+}
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255,255,255, .5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显现小白手*/
+    cursor: pointer;
+}
+.current {
+    background-color: #fff;
+}
+.news {
+    height: 163px;
+    border: 1px solid #ccc;
+}
+.news-hd {
+    height: 32px;
+    /*dotted是点线的意思*/
+    border-bottom: 1px dotted #ccc;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 15px;
+}
+.news-hd a{
+    float: right;
+    font-size: 12px;
+}
+.lifeservice {
+    /*溢出部分隐藏*/
+    overflow: hidden;
+    height: 208px;
+    /*不给上边框*/
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.lifeservice ul {
+    width: 252px;
+}
+.lifeservice li {
+    position: relative;
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.lifeservice li a {
+    display: block;
+    /*解决i引起的外边距合并或者塌陷的问题*/
+    overflow: hidden;
+    height: 100%;
+}
+.lifeservice li p {
+    text-align: center;
+}
+.hot {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 15px;
+    background: url(../img/jian.jpg);
+}
+.service_ico {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons.png) no-repeat;
+    margin: 10px auto;          
+}
+.service_ico_huafei {
+    background-position: -17px -16px;
+}
+.service_ico_feiji {
+    width: 26px;
+    background-position: -78px -16px;
+}
+.bargin {
+    height: 75px;
+    margin-top: 5px;
+}
+.news-bd {
+    padding: 10px 0 0 15px;
+}
+.news-bd li {
+    height: 23px;
+}
+.recommend {
+    height: 163px;
+    margin-top: 10px;
+}
+.recom-hd {
+    text-align: center;
+    width: 200px;
+    height: 163px;
+    background-color: #5c5251;
+}
+.recom-hd img {
+    margin: 30px 0 10px 0;
+}
+.recom-hd h3 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}
+.recom-bd {
+    width: 1000px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+/*这里会有一个权重问题 出现此问题 请看品优购p49 8分41秒*/
+.recom-bd .last {
+    border-right: 0;
+}
+.recom-bd li {
+    float: left;
+    width: 249px;
+    height: 145px;
+    border-right: 1px solid #ccc;
+    margin-top: 10px;
+}
+/*楼层区*/
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    margin-top: 25px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: normal;
+}
+.tab-list {
+    line-height: 30px;
+}
+.tab-list li {
+    float: left;
+}
+.tab-list li a {
+    margin: 0 15px;
+}
+.box-bd {
+    height: 360px;
+}
+.w209 {
+    width: 209px;
+    background-color: #f9f9f9;
+}
+.w329 {
+    width: 329px;
+}
+.w219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+.w220 {
+    width: 220px;
+    border-right: 1px solid #ccc;
+}
+.tab-con li {
+    float: left;
+    height: 360px;
+}
+.tab-con-list {
+    /*父元素没给高度，但是子元素浮动了，所以要清除浮动*/
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.tab-con-item {
+    border-bottom: 1px solid #ccc;
+}
+.tab-con-list li {
+    width: 86px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-left: 15px;
+}
+.box-bd li {
+    overflow: hidden;
+}
+/*加一个过渡属性  详情请看P60*/
+.box-bd img {
+    transition: all 0.2s;
+}
+.box-bd img:hover {
+    margin-left: 8px;
+}
+/*电梯导航*/
+.fixedtool {
+    /*定位的一种算法 详细请看pink老师品优购p57*/
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -676px;
+    width: 66px;
+    background-color: #fff;
+}
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    /*鼠标变成小手*/
+    cursor: pointer;
+}
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+
+
+

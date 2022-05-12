@@ -1,0 +1,283 @@
+/*详情页的页面样式*/
+.crumb_wrap a {
+    margin-right: 10px;
+}
+.de_container {
+    margin-top: 20px;
+}
+.preview_wrap {
+    width: 400px;
+    height: 590px;
+
+}
+.preview_img {
+    height: 398px;
+    border: 1px solid #ccc;
+}
+.preview_list {
+    position: relative;
+    height: 60px;
+    margin-top: 60px;
+}
+.list_item {
+    width: 320px;
+    height: 60px;
+    /*块级元素盒子居中对齐的方法*/
+    margin: 0 auto;
+}
+.list_item li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    border: 2px solid transparent;
+    margin: 0 2px;
+}
+.list_item li.current {
+    border-color: #c81623;
+}
+.arrow_prev,
+.arrow_next {
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 32px;
+}
+.arrow_prev {
+    left: 0;
+    background: url(../img/disabled-prev.png) no-repeat;
+}
+.arrow_next {
+    right: 0;
+    background: url(../img/disabled-next.png) no-repeat;
+}
+.itemInfo_wrap {
+    width: 718px;
+}
+.sku_name {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.news {
+    height: 32px;
+    color: #e12228;
+}
+.summary dl {
+    overflow: hidden;
+}
+.summary dt,
+.summary dd {
+    float: left;
+}
+.summary dt {
+    width: 60px;
+    padding-left: 10px;
+    /*这行代码很有意思  请看p88 2分24秒*/
+    line-height: 36px;
+}
+.summary_price ,
+.summary_promotion{
+    position: relative;
+    padding: 10px 0;
+    background-color: #fee9eb;
+}
+.price {
+    font-size: 24px;
+    color: #e12228;
+}
+.summary_price a {
+    color: #c81623;
+}
+/*这里不适合给右浮动  详情见P88 5分37*/
+.remark {
+   position: absolute;
+   right: 10px;
+   top: 20px;
+}
+.summary_promotion {
+    padding-top: 0;
+}
+.summary_promotion dd {
+    width: 450px;
+    line-height: 36px;
+}
+.summary_promotion em {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+}
+.summary_support dd {
+    line-height: 36px;
+}
+.choose_color a {
+    /*你这里用display: block它会一列显示  而不是一行显示 所以要用inlie block*/
+    display: inline-block;
+    width: 80px;
+    height: 41px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    line-height: 41px;
+    text-align: center;
+}
+.choose_color a.current {
+    border-color: #c81623;
+}
+.choose_version {
+    margin: 10px 0;
+}
+.choose_version a ,
+.choose_type a
+{
+    display: inline-block;
+    height: 32px;
+    padding: 0 12px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    line-height: 32px;
+}
+.choose_version a.current,
+.choose_type a.current
+{
+    border-color: #c81623;
+}
+.choose_btns {
+    margin-top: 20px;
+}
+.choose_amount {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+    height: 46px;
+    background-color: pink;
+}
+.choose_amount input {
+    width: 33px;
+    height: 44px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.add,
+.reduce {
+    position: absolute;
+    width: 15px;
+    height: 22px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 22px;
+}
+.add {
+    top: 0;
+    right: 0;
+}
+.reduce {
+    bottom: 0;
+    right: 0;
+    /*禁止鼠标样式*/
+    cursor: not-allowed;
+}
+.addcar {
+    float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+.aside {
+    width: 208px;
+    border:1px solid #ccc;
+}
+.tab_list {
+    height: 34px;
+    background-color: pink;
+}
+/*把背景颜色 底边框都给了li*/
+.tab_list li {
+    float: left;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+}
+/*鼠标单击li 变化样式 背景变白色 去掉下边框 文字变颜色*/
+.tab_list .current {
+    background-color: #fff;
+    border-bottom: 0;
+    color: red;
+}
+.first_tab {
+    width: 104px;
+}
+.second_tab {
+    width: 103px;
+    border-left: 1px solid #ccc;
+}
+.tab_con {
+    padding: 0 10px;
+}
+.tab_con li {
+    border-bottom: 1px solid #ccc;
+}
+.tab_con li img {
+    padding: 0 22px;
+    margin: 20px 0;
+}
+/*让文字在一行显示，并且多余出现省略号三部曲 出现这三行代码请看品优购p94 4分34秒*/
+.tab_con li h5 {
+    /*让文字再一行显示*/
+    white-space: nowrap;
+    /*溢出隐藏*/
+    overflow: hidden;
+    /*隐藏部分用省略号表示*/
+    text-overflow: ellipsis;
+}
+.aside_price {
+    font-weight: 700;
+    margin: 10px 0;
+}
+.as_addcar {
+    /*因为a是行内元素。所以转换成为块级元素*/
+   display: block;
+   width: 88px;
+   height: 26px;
+   border: 1px solid #ccc;
+   background-color: #f7f7f7;
+   /*块级元素直接可以这种对齐方式*/
+   margin: 10px auto;
+   /*让框框里面的文字垂直水平居中*/
+   text-align: center;
+   line-height: 26px;
+}
+.detail {
+    width: 978px;
+    height: 1000px;
+}
+.detail_tab_list {
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.detail_tab_list li {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    /*让鼠标变成小手*/
+    cursor: pointer;
+}
+.detail_tab_list .current {
+    background-color: #c81623;
+    color: #fff;
+}
